@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.clear{zoom: 1;}
+			.clear:after{content: ""; display: block; clear: both;}
+			
+			.wrap{padding-bottom: 10px;}/*解决bug*/
+			
+			#div1{ width: 100px; height: 100px; background: red; float: left;/* margin-bottom: 10px;*//* 在ie7以下 margin-bottom没了所以 给他用个包裹层 wrap 给padding-bottom:10px*/}
+			
+			#div2{width: 200px; height: 200px; background: yellow;}
+		</style>
+	</head>
+	<body>
+		<div class="wrap clear">
+			<div id="div1"></div>
+		</div>
+		
+		<div id="div2"></div>
+	</body>
+</html>
